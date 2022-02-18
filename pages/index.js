@@ -33,22 +33,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-6xl font-bold">Your Next DeFi Startup</h1>
-
-        <input
-          type="text"
-          className="px-4 py-3 border w-96"
-          placeholder="add a theme like Pancake, Playmate etc..."
-          onChange={(e) => setTheme(e.target.value)}
-        />
-
-        <button
-          onClick={handleClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Click for new idea!
-        </button>
-        <h1 className="text-4xl font-bold underline">{newIdea}</h1>
+        <h1 className="pb-8 text-6xl font-bold">Your Next DeFi Startup</h1>
+        <div class="grid grid-cols-4 gap-8">
+          <input
+            type="text"
+            className="col-span-3 border w-128"
+            placeholder="add a theme like Pancake, Playmate etc..."
+            onChange={(e) => setTheme(e.target.value)}
+          />
+          <button
+            onClick={handleClick}
+            className="col-span-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Click for new idea!
+          </button>
+        </div>
+        <h1 className="pt-8 text-4xl font-bold underline">{newIdea}</h1>
       </main>
 
       <footer className={styles.footer}>
