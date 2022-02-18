@@ -34,7 +34,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className="pb-8 text-6xl font-bold">Your Next DeFi Startup</h1>
-        <div class="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-4 gap-8">
           <input
             type="text"
             className="col-span-3 border w-128"
