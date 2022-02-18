@@ -23,4 +23,5 @@ export const words = [
   'Metaverse',
   'DeFi',
   'Fair Launch',
+  'Play to earn',
 ];
