@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { words } from '../configs/words';
+import { nouns, chains, adjs } from '../configs/words';
 
 import { useState } from 'react';
 
@@ -9,8 +9,10 @@ export default function Home() {
   const [theme, setTheme] = useState();
 
   const handleClick = (event) => {
-    const shuffledWords = words.sort((a, b) => 0.5 - Math.random());
-    const newIdea = `${shuffledWords[0]} ${shuffledWords[1]} ${shuffledWords[2]}`;
+    const randomNouns = nouns.sort((a, b) => 0.5 - Math.random());
+    const randomChain = chains.sort((a, b) => 0.5 - Math.random())[0];
+    const randomAdj = adjs.sort((a, b) => 0.5 - Math.random())[0];
+    const newIdea = `${randomAdj} ${randomNouns[0]} ${randomNouns[1]} on ${randomChain}`;
 
     if (theme) {
       newIdea = `${theme} themed ${newIdea}`;
@@ -36,7 +38,7 @@ export default function Home() {
         <input
           type="text"
           className="px-4 py-3 border w-96"
-          placeholder="add a theme here like Pancake, Playmate etc..."
+          placeholder="add a theme like Pancake, Playmate etc..."
           onChange={(e) => setTheme(e.target.value)}
         />
 

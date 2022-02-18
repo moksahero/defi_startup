@@ -1,27 +1,27 @@
-export const words = [
+export const nouns = [
   'Yield Farming',
   'Web3',
-  'Decentralized',
   'DAO',
-  'Leveraged',
-  'Node',
-  'Fantom',
-  'Avax',
-  'Terra',
   'Blockchain',
   'NFT',
   'Crypto',
-  'Tokenized',
   'Tomb',
-  'Perpetual',
   'Swap',
-  'Truely',
-  'Automated',
   'Bot',
   'Lending',
   'IDO',
   'Metaverse',
-  'DeFi',
-  'Fair Launch',
   'Play to earn',
+];
+
+export const chains = ['Fantom', 'BNB Chain', 'Terra', 'Avalanche'];
+
+export const adjs = [
+  'Decentralized',
+  'Leveraged',
+  'Tokenized',
+  'Perpetual',
+  'Truely',
+  'Automated',
+  'Fair Launch',
 ];
