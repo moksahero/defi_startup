@@ -17,7 +17,7 @@ export const words = [
   'Swap',
   'Truely',
   'Automated',
-  'Platform',
+  'Bot',
   'Lending',
   'IDO',
   'Metaverse',
