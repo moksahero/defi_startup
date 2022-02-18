@@ -1,17 +1,19 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { words } from '../configs/words';
+
 import { useState } from 'react';
 
 export default function Home() {
   const [newIdea, setNewIdea] = useState();
   const [verb, setVerb] = useState();
 
-  const words = ['yield farming', 'web3', 'decentralized', 'DAO', 'leveraged'];
-
   const handleClick = (event) => {
     const shuffledWords = words.sort((a, b) => 0.5 - Math.random());
-    setNewIdea(`${shuffledWords[0]} ${shuffledWords[1]} ${verb} to earn`);
+
+    setNewIdea(
+      `${shuffledWords[0]} ${shuffledWords[1]} ${shuffledWords[2]} ${verb} to earn platform`
+    );
   };
 
   return (
