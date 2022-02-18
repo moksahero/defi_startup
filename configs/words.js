@@ -11,9 +11,18 @@ export const nouns = [
   'IDO',
   'Metaverse',
   'Play to earn',
+  'Airdrops',
+  'Minting',
 ];
 
-export const chains = ['Fantom', 'BNB Chain', 'Terra', 'Avalanche'];
+export const chains = [
+  'Fantom',
+  'BNB Chain',
+  'Terra',
+  'Avalanche',
+  'Solana',
+  'Harmony',
+];
 
 export const adjs = [
   'Decentralized',
@@ -23,4 +32,5 @@ export const adjs = [
   'Truely',
   'Automated',
   'Fair Launch',
+  'Stable',
 ];
