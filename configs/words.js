@@ -2,7 +2,6 @@ export const nouns = [
   'Yield Farming',
   'Web3',
   'DAO',
-  'Blockchain',
   'NFT',
   'Crypto',
   'Tomb',
